@@ -47,6 +47,23 @@ public class BinaryTree<K extends Comparable<K>> {
 		}
 		return current;
 	}
+	
+
+	/**
+	 * getSize is a method to find the size of the BST
+	 * recursively finding size
+	 * @return
+	 */
+	
+	public int getSize() {
+		return this.getSizeRecursive(root);
+	}
+
+	private int getSizeRecursive(BinaryNode<K> current) {
+		return current == null ? 0 : 1 + this.getSizeRecursive(current.left) + this.getSizeRecursive(current.right);
+	}
+
+    	
 
 	/**
 	 * displayNode is method of void type here diplayNode method is using to display
