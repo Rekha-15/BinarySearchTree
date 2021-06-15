@@ -37,6 +37,11 @@ public class Runner {
 		BinaryTree.displayNode();
 		BinaryTree.getSize();
 		System.out.println("Size of the tree is : " +BinaryTree.getSize());
-
+		BinaryNode<Integer> searchResult = BinaryTree.searchNode(70);
+		if (searchResult == null) {
+			System.out.println("Node not present in Binary Tree");
+		} else {
+			System.out.println("Node is present in Binary Tree :" + searchResult.getKey() + " found");
+		}
 	}
 }

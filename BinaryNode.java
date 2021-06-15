@@ -26,4 +26,10 @@ public class BinaryNode<K extends Comparable<K>> {
 		this.left = null;
 		this.right = null;
 	}
+
+	public String getKey() {
+		return null;
+	}
+	
 }
+
